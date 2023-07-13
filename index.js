@@ -18,4 +18,4 @@ app.use(express.json()); //permite a mi app recibir objetos en formato json en l
 app.use(morgan('dev')) //muestra en consola info extra de las solicitudes
 app.use(express.static(path.join(__dirname, '/public')))
 
-app.use('apitareas', tareasRouter)
+app.use('/apitareas', tareasRouter)
